@@ -6,4 +6,4 @@
  * Time: 12:04
  */
 
-ehcho "Hallo Welt";
+echo "Hallo Welt";
