@@ -17,5 +17,8 @@ class bestellung extends Model
     protected $table = "bestellung";
 
 
+    public function customer() {
+        return $this->hasOne("model\kunden");
+    }
 
 }

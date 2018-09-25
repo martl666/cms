@@ -19,4 +19,8 @@ class kunden extends Model
         return $this->hasMany( "model\bestellung");
     }
 
+    public function address() {
+        return $this->hasOne( "model\adresse");
+    }
+
 }

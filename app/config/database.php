@@ -15,4 +15,5 @@ $capsule->addConnection(array(
     'prefix'    => ''
 ));
 
+var_dump($capsule->getConnection()->getPdo());
 $capsule->bootEloquent();
