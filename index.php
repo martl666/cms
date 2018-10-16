@@ -29,10 +29,11 @@ $debugbarRenderer = $debugbar->getJavascriptRenderer("/cms/vendor/maximebf/debug
 
 $blade = new \Jenssegers\Blade\Blade( sprintf("%s%s%s", BASE_PATH, DIRECTORY_SEPARATOR, "app".DIRECTORY_SEPARATOR."View"), sprintf("%s%s%s", BASE_PATH, DIRECTORY_SEPARATOR, "Storage".DIRECTORY_SEPARATOR."View".DIRECTORY_SEPARATOR."Cache") );
 //$customer = model\kunden::find(2);
-$address1 = model\adresse::where("kunden_id", 1)->with("addressDetails", "customer")->get();
+//$address1 = model\adresse::where("kunden_id", 1)->with("addressDetails", "customer")->get();
 //$address = model\adress_zusatz::find(2)->with(["address"])->get();
-echo $address1;
+//echo $address1;
 //echo "<pre>" . print_r( $address, true ). "</pre>";
+$address1 = array();
 echo $blade->render("Main.html", [ "debugbarHead" => $debugbarRenderer->renderHead(), "customer" => $address1, "debugbarBody" => $debugbarRenderer->render()]);
 
 
